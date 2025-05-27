@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Translator</title>
+</head>
+<body>
+  <h1>Translator</h1>
+  <textarea id="text" placeholder="Enter text here"></textarea><br>
+  <input id="src" placeholder="Source lang (e.g. en)">
+  <input id="tgt" placeholder="Target lang (e.g. fr)">
+  <button onclick="translate()">Translate</button>
+  <p id="result"></p>
+
+  <script>
+    async function translate() {
+      const text = document.getElementById('text').value;
+      const src = document.getElementById('src').value;
+      const tgt = document.getElementById('tgt').value;
+      const res = await fetch('/api/translate', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ text, src, tgt })
+      });
+      const data = await res.json();
+      document.getElementById('result').innerText = data.translated_text || data.error;
+    }
+  </script>
+</body>
+</html>
