@@ -1,5 +1,5 @@
 # AI Translator - Modern Translation Tool
-
+- [AI Translator]((https://navtcc-project.vercel.app/)) for preview.
 A beautiful, modern web-based translation application that works entirely in the browser. Built with vanilla HTML, CSS, and JavaScript for easy deployment on GitHub Pages.
 
 ![AI Translator](https://img.shields.io/badge/Status-Ready%20for%20Deployment-brightgreen)
