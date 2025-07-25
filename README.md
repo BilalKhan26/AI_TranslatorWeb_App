@@ -21,8 +21,7 @@ A beautiful, modern web-based translation application that works entirely in the
 
 ## 🚀 Live Demo
 
-Visit the live application: [Your GitHub Pages URL will be here]
-
+Visit the live application: [(https://navtcc-project.vercel.app/)]
 ## 🛠️ Technologies Used
 
 - **HTML5**: Semantic markup with accessibility features
