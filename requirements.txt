@@ -1,8 +1,0 @@
-flask
-transformers
-sentencepiece
-langdetect
-pytesseract
-pdfplumber
-docx2txt
-Pillow
